@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022-2025 The LineageOS Project
+# Copyright (C) 2022-2025 The Pixelage Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,21 +8,18 @@
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
 # Inherit from common Matrixx configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 TARGET_DISABLE_EPPE := true
 TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Matrixx
-MATRIXX_BUILD_TYPE := Official
-MATRIXX_CHIPSET := SM7475
-MATRIXX_BATTERY := 5000mAh
-MATRIXX_DISPLAY := 1080x2400
+#Pixelage flag
+PIXELAGE_MAINTAINER := sTFu_latest
 WITH_GMS := true
 TARGET_INCLUDE_NEXUS := true
 
-PRODUCT_NAME := lineage_marble
+PRODUCT_NAME := pixelage_marble
 PRODUCT_DEVICE := marble
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
